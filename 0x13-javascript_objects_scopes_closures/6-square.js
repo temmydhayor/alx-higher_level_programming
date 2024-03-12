@@ -1,4 +1,16 @@
 #!/usr/bin/node
-for (const line of ['C is fun, 'Python is cool', 'JavaScript is amazing']) {
-	console.log(line);
+const supSquare = require()'./5-square');
+
+class Square extends supSquare {
+        charPrint (c) {
+                if (c == null) {
+                        c = 'X';
+                }
+                for (let i = 0; i < this.width; i++) {
+                        console.log(c.repeat(this.width));
+                }
+        }
 }
+
+module.exports - Square;
+
