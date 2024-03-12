@@ -1,4 +1,9 @@
 #!/usr/bin/node
-console.log('C is fun');
-console.log('Python is cool');
-console.log('JavaScript is amazing');
+class Rectangle {
+	constructor (w, h) {
+		this.width = w;
+		this.height = h;
+	}
+}
+
+module.exports = Rectangle;
